@@ -1,0 +1,17 @@
+{
+  "buildCommand": "echo build",
+  "crons": [
+    {
+      "path": "/api/ping",
+      "schedule": "0 9 * * *"
+    }
+  ],
+  "functions": {
+    "api/admin/products-upload.js": {
+      "maxDuration": 30
+    },
+    "api/admin/import.js": {
+      "maxDuration": 60
+    }
+  }
+}
